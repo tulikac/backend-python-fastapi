@@ -28,6 +28,12 @@ Install the development dependencies and run the tests:
 .\scripts\verify.ps1 -BaseUrl http://localhost:8080
 ```
 
+## Builder Apps configuration
+
+The root `builder.yaml` declares one public Python web component. It uses the
+repository root, starts through `python main.py`, listens on port `8080`, and
+reports readiness through `/health`.
+
 ## Routes
 
 | Route | Purpose |
